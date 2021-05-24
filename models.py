@@ -3,8 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 import json
 import os
 
-database_path = 'postgresql://postgres:0000@localhost:5432/herokutest'
-#os.environ['DATABASE_URL']
+database_path = os.environ['DATABASE_URL']
 
 db = SQLAlchemy()
 
